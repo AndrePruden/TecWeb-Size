@@ -39,6 +39,7 @@
             border: 12px solid yellow;
             margin: 25px;
         }
+        
         .span1{
             background-color: cyan;
             width: 250px;
@@ -51,24 +52,25 @@
             width: 250px;
         }
 
+        *{
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .contenedor{
+            display: flex;
+            background-color: orange;
+            padding: 25px;
+        }
         .uno{
-            background-color: red;
-            width: 49%;
-            display: inline-block;
+            background-color: green;
+            padding: 25px;
         }
         .dos{
-            background-color: green;
-            width: 49%;
-            display: inline-block;
-        }
-        .tres{
-            background-color: orange;
-            display: inline;
-        }
-        .cuatro{
             background-color: yellow;
-            display: block;
+            padding: 25px;
         }
+
 
 
     </style>
@@ -92,8 +94,6 @@
     <div class="contenedor">
         <div class="uno">Contenido 1</div>
         <div class="dos">Contenido 2</div>
-        <div class="tres">Contenido 3</div>
-        <span class="cuatro">Contenido 4</span>
     </div>
 
 </body>
